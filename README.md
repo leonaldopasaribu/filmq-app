@@ -4,6 +4,11 @@ Website Search Film using http://www.omdbapi.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![1](https://user-images.githubusercontent.com/51619445/96562130-9c5e3900-12ea-11eb-9fd4-4f0f564af0c3.png)
+![2](https://user-images.githubusercontent.com/51619445/96562137-9e27fc80-12ea-11eb-8523-8f898491a91f.png)
+![3](https://user-images.githubusercontent.com/51619445/96562144-a122ed00-12ea-11eb-9798-9ef66bb67c2b.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
