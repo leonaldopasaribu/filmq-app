@@ -1,0 +1,36 @@
+.search-container,
+.icon-search {
+  display: flex;
+}
+
+.search-container {
+  flex-direction: row;
+}
+
+.search-container > .icon-search,
+.search-container > .input {
+  height: 40px;
+}
+
+.icon-search {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.icon-search > .icon {
+  width: 15px;
+  height: auto;
+  opacity: .7;
+}
+
+.search-container > .input {
+  width: 100%;
+  padding: 0;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  border: none
+}
