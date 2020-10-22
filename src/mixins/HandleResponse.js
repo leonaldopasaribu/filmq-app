@@ -1,5 +1,4 @@
 import { useCallback } from 'react'
-import LikedMoviesStorage from 'services/moviesLikedSotrage'
 
 const HandleResponse = useCallback((response, cb) => {
   const handleResults = {
@@ -9,11 +8,6 @@ const HandleResponse = useCallback((response, cb) => {
       total: 0
     },
 
-    content: {
-      data: response.Search.map(movie => ({ ...movie, Liked: LikedMoviesStorage.has(movie.imdbID) })),
-      error: false,
-      total: Number(response.totalResults)
-    }
   }
 
   const resultsType = response.Search ? 'content' : 'error'
