@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { AppProvider } from "./context/AppContext";
 import { Provider } from "react-redux";
 
 import { useStore } from "./redux/store";
@@ -14,16 +15,18 @@ function App() {
 
   return (
     <Provider store={store}>
-      <Router>
-        <div className="app-content">
-          <header className="header-search">
-            <h1 className="title">Film Q</h1>
-          </header>
+      <AppProvider>
+        <Router>
+          <div className="app-content">
+            <header className="header-search">
+              <h1 className="title">Film Q</h1>
+            </header>
 
-          <Route exact path="/" component={Home} />
-          <Route exact path="/movie/:imdbID" component={Details} />
-        </div>
-      </Router>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/movie/:imdbID" component={Details} />
+          </div>
+        </Router>
+      </AppProvider>
     </Provider>
   );
 }
