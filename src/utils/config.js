@@ -1,4 +1,4 @@
-const API_KEY = 'faf7e5bb&s'
+const API_KEY = '98558322'
 
 const config = (baseUrl = '') => cb => cb(baseUrl, API_KEY)
 
